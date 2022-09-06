@@ -6,8 +6,6 @@
     box-sizing: border-box;
 }
 
-
-
 :root {
     --white: hsl(0, 0%, 98%);
     --gray: hsl(0, 0%, 41%);
@@ -17,8 +15,6 @@
 body {
     font-family: 'Epilogue', sans-serif;
 }
-
-/* font-family: 'Epilogue', sans-serif; */
 
 .navbar {
     background-color: white;
@@ -38,7 +34,6 @@ body {
 }
 
 .navbar-list {
-  font-weight: 500;
   position: fixed;
   z-index: 3;
   overflow-x: hidden;
@@ -73,12 +68,16 @@ body {
     display:block;
 }
 
+
+
 .navbar-list a {
   color:var(--gray);
   padding: 12px 30px;
   text-decoration: none;
   font-size: 17px;
   font-weight: 700px;
+  display: flex;
+  align-items: center;
 }
     
 .navbar-list  a:hover {
@@ -86,9 +85,32 @@ body {
   color: rgb(4, 3, 5);
 }
 
-.arrow-down {
+.arrow-down-one, .arrow-down-two  {
     padding-left: 20px;
     line-height: 22px;
+}
+
+.first-submenu, .second-submenu {
+  display: flex;
+  flex-direction: column;
+  display: none;
+}
+
+.first-submenu img {
+  padding: 0 20px;
+  height: 22px;
+}
+
+.second-submenu {
+  padding-left: 20px;
+}
+
+.arrow-down-one.active, .arrow-down-one.active  {
+  transform: scaleY(-1);
+}
+
+.first-submenu.active, .second-submenu.active {
+  display:block;
 }
 
 .login {
@@ -178,7 +200,7 @@ body {
 
 .article h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
   padding: 3.25rem 0 1.25rem;
   font-weight: 700;
 }
