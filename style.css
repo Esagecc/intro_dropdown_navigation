@@ -292,7 +292,7 @@ button {
   }
 
   .top-navbar {
-    width: 93%;
+    width: 85%;
     padding: 1rem 0;
     font-weight: 700;
   }
@@ -318,6 +318,7 @@ button {
 
   .login button {
     margin-top: 0;
+    width: 110px;
   }
 
   .login p {
@@ -333,9 +334,35 @@ button {
 
   .article {
     flex-direction: row-reverse;
-    width: 75%;
+    width: 69%;
     margin: 0 auto;
+  }
 
+  .article-texts  {
+    align-items: flex-start;
+  }
+
+  .article-texts h2 {
+    font-size: 5.6rem;
+    max-width: 600px;
+    padding-top: 10.2rem;
+  }
+
+  .article-texts p {
+    font-size: 1.3rem;
+    max-width: 500px;
+    padding-top: 2.3rem;
+  }
+  
+  .article-texts h2, .article-texts p {
+    text-align: left;
+  }
+
+  button {
+    margin-top: 3.8rem;
+    height: 61px;
+    font-size: 1.3rem;
+    width: 180px;
   }
 
   .hero-mobile {
@@ -344,6 +371,10 @@ button {
 
   .hero-desktop {
     display: block;
-    width: 50%;
+    width: 38%;
+  }
+
+  .icons img {
+    width: 70px;
   }
 }
